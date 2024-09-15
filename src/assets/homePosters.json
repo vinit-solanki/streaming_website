@@ -1,0 +1,37 @@
+{
+    "01": {
+        "id": 1,
+        "name": "The Batman",
+        "descp": "2022 · 2h 56m",
+        "genre": "Action | Sci-fi",
+        "img": "https://images.thedirect.com/media/article_full/the-batman-reviews.jpg"
+    },
+    "02": {
+        "id": 2,
+        "name": "Inception",
+        "descp": "2010 · 2h 28m",
+        "genre": "Action | Sci-fi | Drama",
+        "img": "https://image.tmdb.org/t/p/original/zSBVQIvx4UIHoFf1oDvixHyIQrz.jpg"
+    },
+    "03": {
+        "id": 3,
+        "name": "Interstellar",
+        "descp": "2014 · 2h 49m",
+        "genre": "Adventure | Drama | Sci-fi",
+        "img": "https://tse3.mm.bing.net/th?id=OIP.HVzEbzsaRWPnNjXQNQaXYgHaEK&pid=Api&P=0&h=180"
+    },
+    "04": {
+        "id": 4,
+        "name": "The Dark Knight",
+        "descp": "2008 · 2h 32m",
+        "genre": "Action | Crime | Drama",
+        "img": "https://www.hdwallpaper.nu/wp-content/uploads/2015/10/The_Dark_Knight_wallpaper_041.jpg"
+    },
+    "05": {
+        "id": 5,
+        "name": "Avengers: Endgame",
+        "descp": "2019 · 3h 1m",
+        "genre": "Action | Adventure | Drama",
+        "img": "https://writinguntilragnarokhome.files.wordpress.com/2021/01/avengers-endgame-review.jpg?w=1200"
+    }
+}
