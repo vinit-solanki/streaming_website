@@ -15,13 +15,13 @@ function Carousel() {
     );
   };
 
-//   useEffect(() => {
-//     // Set up autoplay
-//     const intervalId = setInterval(handleNext, 5000); // Change slide every 3 seconds
+  // useEffect(() => {
+  //   // Set up autoplay
+  //   const intervalId = setInterval(handleNext, 4000); // Change slide every 3 seconds
 
-//     // Clean up interval on component unmount
-//     return () => clearInterval(intervalId);
-//   }, []);
+  //   // Clean up interval on component unmount
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   return (
     <div className='relative w-full max-h-[500px] overflow-hidden border-b-2'>

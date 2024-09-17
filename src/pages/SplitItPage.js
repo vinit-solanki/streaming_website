@@ -1,14 +1,12 @@
 import React from 'react'
 import { FaMale, FaFemale } from 'react-icons/fa'
-
+import { useNavigate } from 'react-router';
 function SplitItPage({ name = "Vinit", gender = "male", groupName = ["None"], recentGroups = ["No Recent Groups"] }) {
-  // This map defines the min no. of members allowed according to the type of group 
-  const groupMap = {
-    "basic": 1,
-    "pro": 3,
-    "legend": 4
-  };
 
+  const navigator = useNavigate();
+  const handleQueuing = ()=>{
+    navigator('/queuingcustomers')
+  }
   return (
     <div className='w-full min-h-screen flex flex-col justify-center items-center px-3 py-4'>
       {/* Main Container */}
@@ -42,13 +40,13 @@ function SplitItPage({ name = "Vinit", gender = "male", groupName = ["None"], re
         <div className='w-1/2 p-2'>
           <h2 className='text-2xl text-gray-300 sm:text-3xl'>Select Your Plan Type</h2>
           <select className='w-full mt-3 px-2 py-4 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500'>
-            <option value="basic">Basic . Free. 1 Member at Max.</option>
-            <option value="pro">Pro . Rs.399/qtr . 3 Members at Max.</option>
-            <option value="legend">Legend . Rs.499/qtr . 4 Members at Max.</option>
+            <option value="basic" className='text-lg '>Basic . Free. 1 Member at Max.</option>
+            <option value="pro" className='text-lg '>Pro . Rs.399/qtr . 3 Members at Max.</option>
+            <option value="legend" className='text-lg '>Legend . Rs.499/qtr . 4 Members at Max.</option>
           </select>
         </div>
         <div className='w-1/2 p-2 flex justify-end items-center align-center pr-5 pt-5'>
-          <button className='px-5 py-5 bg-green-600 bg-opacity-100 text-gray-200 rounded-lg font-bold text-xl hover:bg-black bg-opacity-30 transition-colors duration-300'>Split & Pay Now</button>
+          <button onClick={handleQueuing} className='px-5 py-5 bg-green-600 text-gray-200 rounded-lg font-bold text-xl hover:bg-green-700 transition-colors duration-300'>Split & Pay Now</button>
         </div>
       </div>
 

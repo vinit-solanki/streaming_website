@@ -1,12 +1,16 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function MovieListPage() {
   const location = useLocation();
   const { posters, boxTitle } = location.state;
-
+  useEffect(() => {
+    // Scroll to the top when the component is mounted
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="w-full h-auto text-white flex flex-col gap-y-6 px-6 py-8 bg-black">
+    <div className="w-full h-min-screen text-white flex flex-col gap-y-6 px-6 py-8 bg-black">
       {/* Box Title */}
       <h2 className="text-2xl text-center mb-6 font-semibold">{boxTitle}</h2>
 
@@ -23,7 +27,7 @@ function MovieListPage() {
                 className="w-[250px] h-[350px] rounded-md shadow-lg"
               />
               {/* Movie Title */}
-              <p className="text-center bg-gray-800 w-full p-2 rounded text-sm text-gray-300 mt-2">
+              <p className="text-center w-full p-2 rounded text-sm text-gray-300 mt-2">
                 {poster.Title}
               </p>
             </div>

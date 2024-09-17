@@ -13,7 +13,7 @@ function SubscriptionPlan({ planTitle, planDetails, planPrice }) {
         ))}
       </ul>
       <p className='text-3xl font-semibold text-white mb-3 flex justify-start align-start items-start mt-2'>{planPrice}</p>
-      <button className='w-full py-3 bg-red-600 bg-opacity-100 text-white rounded-lg font-semibold hover:bg-black bg-opacity-30 transition-colors duration-300'>
+      <button className='w-full py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-black bg-opacity-30 transition-colors duration-300'>
         Buy Now
       </button>
     </div>

@@ -54,7 +54,7 @@ function MovieBox({ boxTitle, boxDesp, initialNumOfMovies = 4 }) {
           </div>
         ))}
       </div>
-      <div className='w-full text-center '>
+      <div className='w-full text-center'>
       {numOfMovies < posters.length && (
         <button 
         onClick={handleViewMore} // Navigate to the MovieListPage on click
